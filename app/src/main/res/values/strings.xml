@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MyTestApplication</string>
+
+
+    <string name="email_label">Email: </string>
+    <string name="email_hint_label">email ex. a@a.a</string>
+    <string name="email_error_label">Please enter email address</string>
+
+
+
+    <string name="password_label">Password: </string>
+    <string name="password_hint_label">password</string>
+    <string name="password_error_label">Please enter password</string>
+    <string name="login_button_label">LogIn</string>
+    <string name="button_yes_label">Yes</string>
+    <string name="button_no_label">No</string>
+    <string name="confirmation_button_label">OK</string>
+    <string name="answer_confirmation">Correct! The right answer is: </string>
+    <string name="answer_negation">Sorry, you are wrong! The right answer is: </string>
+    <string name="start_again_button_label">Start again</string>
+    <string name="cancel_button_label">Cancel</string>
+
+    <string name="question_tab_tittle_label">Famous Quote Quiz</string>
+    <string name="settings_tab_tittle_label">Settings</string>
+    <string name="profile_tab_tittle_label">Profile</string>
+    <string name="switcher_label">Multiple choise mode</string>
+
+    <string name="logout_button_label">LogOut</string>
+
+
+</resources>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/question_tab_tittle_label"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@color/tittle_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here is my question"
+            android:textColor="@android:color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/question_description_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/question_border"
+            android:layout_marginTop="15dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/question_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="Here is my Long question Description"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/answer_buttons_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            >
+
+            <Button
+                android:id="@+id/first_variant_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tabsBackgroun"
+                android:textColor="@color/white"
+                android:text="@string/button_yes_label"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/second_variant_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tabsBackgroun"
+                android:textColor="@color/white"
+                android:text="@string/button_yes_label"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+            <Button
+                android:id="@+id/third_variant_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/tabsBackgroun"
+                android:textColor="@color/white"
+                android:text="@string/button_yes_label"
+                android:layout_marginTop="20dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/correct_answer_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/correct_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Here is the corect answer"
+                android:textColor="@android:color/black"
+                android:gravity="center"/>
+
+            <Button
+                android:id="@+id/load_next_button"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounde_gray_background"
+                android:text="@string/confirmation_button_label"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/correct_answer"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
